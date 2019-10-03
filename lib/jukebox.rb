@@ -40,9 +40,8 @@ end
 def list(songs)
   array = []
   songs.each_with_index do |song, index|
-    array.push("/#{index+1}. #{song}/")
+    puts "/#{index+1}. #{song}/"
   end
-  puts array
 end
 
 def exit_jukebox()
