@@ -11,11 +11,11 @@ songs = [
 ]
 
 def help()
-  puts "/I accept the following commands:/\n
-  puts /- help : displays this help message/\n
-  puts /- list : displays a list of songs you can play/\n
-  puts /- play : lets you choose a song to play/\n
-  puts /- exit : exits this program/"
+  puts "/I accept the following commands:/\n"
+  puts /- help : displays this help message/\n"
+  puts /- list : displays a list of songs you can play/\n"
+  puts /- play : lets you choose a song to play/\n"
+  puts /"- exit : exits this program/""
 end
 
 def play(songs)
