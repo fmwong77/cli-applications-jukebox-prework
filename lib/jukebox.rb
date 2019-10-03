@@ -11,11 +11,11 @@ songs = [
 ]
 
 def help()
-  puts "I accept the following commands:\n- help : displays this help message\n- list : displays a list of songs you can play\n- play : lets you choose a song to play\nexit : exits this program"
+  puts "/I accept the following commands:/\n/- help : displays this help message/\n/- list : displays a list of songs you can play/\n/- play : lets you choose a song to play/\n/- exit : exits this program/"
 end
 
 def play(songs)
-  puts "Please enter a song name or number:"
+  puts "/Please enter a song name or number:/"
   user_input = gets.strip    
   found = false
   if user_input.to_i
@@ -30,9 +30,9 @@ def play(songs)
     end
   end
   if found
-    puts "Playing #{play_song}"
+    puts "/Playing #{play_song}/"
   else
-    puts "invalid input, please try again"
+    puts "/Invalid input, please try again/"
   end
 end
 
@@ -44,7 +44,7 @@ def list(songs)
 end
 
 def exit_jukebox()
-  puts "Goodbye"
+  puts "/Goodbye/"
 end
 
 def run(songs)
