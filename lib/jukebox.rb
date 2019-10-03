@@ -61,7 +61,7 @@ def run(songs)
     elsif user_input == "exit"
       exit_jukebox()
     else
-      puts "invalid input"
+      puts "/Invalid input/"
     end
     
     break if user_input == "exit"
