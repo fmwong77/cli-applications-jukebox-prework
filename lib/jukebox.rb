@@ -39,7 +39,7 @@ end
 def list(songs)
   array = []
   songs.each_with_index do |song, index|
-    array.push("#{index+1}. #{song}")
+    array.push("/#{index+1}. #{song}/")
   end
 end
 
@@ -49,7 +49,7 @@ end
 
 def run(songs)
   loop do
-    puts "Please enter a command:"
+    puts "/Please enter a command:/"
     user_input = gets.strip
     if user_input == "play"
       play(songs)
